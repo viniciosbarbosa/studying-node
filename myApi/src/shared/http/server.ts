@@ -1,9 +1,17 @@
-export class AppServer {
-  private app: string;
+import express from "express";
+import "express-async-errors";
+import cors from "cors";
+const app = express();
 
-  constructor(info?: string) {
-    this.app = info ?? "Ola dev";
-  }
+app.use(cors());
+app.use(express.json());
 
-  public start(): void {}
-}
+app.get("/", (request, response) => {
+  return response.json({
+    message: "Hello World",
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Serving started on port 3000");
+});
