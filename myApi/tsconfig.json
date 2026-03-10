@@ -28,7 +28,11 @@
 
     "skipLibCheck": true,
 
-    "paths": {}
+    "paths": {
+      "@roles/*": ["src/modules/roles/*"],
+      "@users/*": ["src/modules/users/*"],
+      "@shared/*": ["src/shared/*"]
+    }
   },
 
   "include": ["src"],

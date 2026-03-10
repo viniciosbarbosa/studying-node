@@ -1,9 +1,9 @@
-class AppServer {
+export class AppServer {
   private app: string;
 
-  constructor(info: string) {
+  constructor(info?: string) {
     this.app = info ?? "Ola dev";
   }
-}
 
-export default AppServer;
+  public start(): void {}
+}
