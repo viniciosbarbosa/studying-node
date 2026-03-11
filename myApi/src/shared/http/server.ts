@@ -28,7 +28,6 @@ app.use(
         message: isInternalError ? "Internal server error" : error.message,
       });
     }
-    console.error("❌ Bug Inesperado:", error);
 
     return response.status(500).json({
       status: "error",
