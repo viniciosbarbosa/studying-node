@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "My Api Documentation",
+    "description": "My Api With all specifications",
+    "version": "1.0.0",
+    "contant": {
+      "name": "Vinicius"
+    }
+  }
+}
